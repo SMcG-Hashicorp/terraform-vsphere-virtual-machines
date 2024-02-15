@@ -1,15 +1,15 @@
 variable "vsphere_datacenter" {
-  Default = "VM-Lab"
+  default = "VM-Lab"
   description = "The datacenter where the virtual machines will be put."
 }
 
 variable "vsphere_cluster" {
-  Default = "vCenter67.vSphere.Lab"
+default = "vCenter67.vSphere.Lab"
   description = "The cluster where the virtual machines will be put."
 }
 
 variable "vsphere_datastore" {
-  Default = "datastore1"
+  default = "datastore1"
   description = "The datastore where the virtual machines will be put."
 }
 
