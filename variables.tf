@@ -9,7 +9,7 @@ default = "vCenter67.vSphere.Lab"
 }
 
 variable "vsphere_datastore" {
-  default = "datastore1"
+  default = "DStoresSources"
   description = "The datastore where the virtual machines will be put."
 }
 variable "Network" {
