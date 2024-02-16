@@ -1,7 +1,4 @@
 provider "vsphere" {
-  name     = var.vsphere_user
-  name     = var.vsphere_password
-  name     = var.vsphere_server
   # If you have a self-signed cert
   allow_unverified_ssl = true
 }
