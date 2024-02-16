@@ -96,9 +96,3 @@ resource "vsphere_virtual_machine" "vms" {
 
   }
 }
-locals {
-  vm_networks = zipmap(
-    formatlist("${trimspace("%s")}", data.vsphere_network.networks.*.name),
-    data.vsphere_network.networks.*.id
-  )
-}
