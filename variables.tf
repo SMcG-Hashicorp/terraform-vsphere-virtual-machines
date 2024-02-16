@@ -14,10 +14,11 @@ variable "vsphere_datastore" {
 }
 
 variable "vm_template" {
+  default = "Nested_ESXi6.7u3_v1"
   description = "The template the virtual machines should be based on."
 }
 
 variable "virtual_machines" {
-  default = "Nested_ESXi6.7u3_v1"
+  default = "Nested_ESXi6.7u3_v1_DEPLOY"
   description = "The parameters of the virtual machines you wish to create."
 }
