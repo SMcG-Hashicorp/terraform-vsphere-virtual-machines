@@ -43,11 +43,6 @@ resource "vsphere_virtual_machine" "vms" {
 
   scsi_type = data.vsphere_virtual_machine.template.scsi_type
 
-  network_interface {
-    network_id   = local.vm_networks[trimspace(var.virtual_machines[count.index].network)]
-    adapter_type = data.vsphere_virtual_machine.template.network_interface_types[0]
-  }
-
   dynamic "disk" {
     for_each = var.virtual_machines[count.index].disks
 
