@@ -12,7 +12,10 @@ variable "vsphere_datastore" {
   default = "datastore1"
   description = "The datastore where the virtual machines will be put."
 }
-
+variable "vm_Network" {
+  default = "VM network"
+  description = "The Network virtual machines should be connect to."
+}
 variable "vm_template" {
   default = "Nested_ESXi6.7u3_v1"
   description = "The template the virtual machines should be based on."
