@@ -1,7 +1,7 @@
 provider "vsphere" {
   user     = "administrator@vsphere.local"
   password = "VMware1!"
-  vsphere_server = "vcenter67.vSphere.Lab"
+  vsphere_server = "192.168.1.202"
 # If you have a self-signed cert
   allow_unverified_ssl = true
 }
