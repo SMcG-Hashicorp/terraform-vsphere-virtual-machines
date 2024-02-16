@@ -4,7 +4,7 @@ variable "vsphere_datacenter" {
 }
 
 variable "vsphere_cluster" {
-default = "vCenter67.vSphere.Lab"
+default = "Lab-Cluster"
   description = "The cluster where the virtual machines will be put."
 }
 
