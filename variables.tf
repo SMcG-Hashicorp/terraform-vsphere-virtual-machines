@@ -1,10 +1,10 @@
 variable "vsphere_user" {
-  user = "administrator@vsphere.local"
+  vsphere_user = "administrator@vsphere.local"
   description = "User Logon to vCenter."
 }
 
 variable "vsphere_password" {  
-  password       = "VMware1!"
+  vsphere_password       = "VMware1!"
   description = "Password - default."
 }
 
