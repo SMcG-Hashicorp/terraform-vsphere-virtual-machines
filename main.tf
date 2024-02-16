@@ -2,6 +2,9 @@ provider "vsphere" {
   user           = "administrator@vsphere.local"
   password       = "VMware1!"
   vsphere_server = "vCenter67.vSphere.Lab"
+
+  # If you have a self-signed cert
+  allow_unverified_ssl = true
 }
 data "vsphere_datacenter" "dc" {
   name = var.vsphere_datacenter
