@@ -1,7 +1,7 @@
 provider "vsphere" {
-  vsphere_user                 = var.vsphere_user
-  vsphere_password             = var.vsphere_password
-  vsphere_server       = var.vsphere_server
+  name     = var.vsphere_user
+  name     = var.vsphere_password
+  name     = var.vsphere_server
   # If you have a self-signed cert
   allow_unverified_ssl = true
 }
