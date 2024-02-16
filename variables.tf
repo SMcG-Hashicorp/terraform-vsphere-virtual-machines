@@ -19,5 +19,6 @@ variable "vm_template" {
 
 variable "virtual_machines" {
   type        = list(any)
+  default = "Nested_ESXi6.7u3_v1"
   description = "The parameters of the virtual machines you wish to create."
 }
