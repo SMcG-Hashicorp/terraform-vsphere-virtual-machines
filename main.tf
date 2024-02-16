@@ -1,4 +1,15 @@
+terraform {
+  required_providers {
+    vsphere = {
+      source = "hashicorp/vsphere"
+      version = "2.6.1"
+    }
+  }
+}
+
 provider "vsphere" {
+  # Configuration options
+}provider "vsphere" {
   user     = "administrator@vsphere.local"
   password = "VMware1!"
   vsphere_server = "192.168.1.202"
