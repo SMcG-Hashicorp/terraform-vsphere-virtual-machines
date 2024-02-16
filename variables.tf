@@ -12,7 +12,7 @@ variable "vsphere_datastore" {
   default = "datastore1"
   description = "The datastore where the virtual machines will be put."
 }
-variable "vm_Network" {
+variable "Network" {
   default = "VM network"
   description = "The Network virtual machines should be connect to."
 }
