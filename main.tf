@@ -25,12 +25,6 @@ data "vsphere_virtual_machine" "template" {
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 
-data "vsphere_network" "networks" {
-  count         = length(local.vms_networks)
-  name          = local.vms_networks[count.index]
-  datacenter_id = data.vsphere_datacenter.dc.id
-}
-
 resource "vsphere_virtual_machine" "vms" {
   count = length(var.virtual_machines)
 
