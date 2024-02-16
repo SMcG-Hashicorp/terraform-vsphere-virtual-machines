@@ -104,7 +104,7 @@ resource "vsphere_virtual_machine" "vms" {
 }
 
 locals {
-  vms_networks = distinct(var.virtual_machines.*.network)
+  vms_networks = distinct(var.Network.*.network)
 }
 
 locals {
