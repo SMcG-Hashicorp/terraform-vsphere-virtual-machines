@@ -1,4 +1,4 @@
-terraform {
+terterraform {
   required_providers {
     vsphere = {
       source = "hashicorp/vsphere"
@@ -12,7 +12,7 @@ provider "vsphere" {
 }provider "vsphere" {
   user     = "administrator@vsphere.local"
   password = "VMware1!"
-  vsphere_server = "192.168.1.202"
+  vsphere_server = "vCenter67.vSphere.Lab"
 # If you have a self-signed cert
   allow_unverified_ssl = true
 }
